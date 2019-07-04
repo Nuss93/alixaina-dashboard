@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
+
+.sidebar-header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.loader {
+    border: 8px solid #000;
+    border-radius: 50%;
+    border-top: 8px solid rgb(87, 87, 87);
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+    -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+    -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(0deg);
+    }
+
+    100% {
+    transform: rotate(360deg);
+    }
+}
