@@ -98,7 +98,7 @@ class Guestlist extends Component {
         }
         if(load === '2') {
             let DATA = filteredData;
-            let SORT = DATA.sort((a, b) => a.name.localeCompare(b.name));
+            let SORT = DATA.sort((a, b) => b.timestamp - a.timestamp);
             let GOING = SORT.map((data, index) => (
                 <ResponseDisplay key={index} data={data}/>
             ));
