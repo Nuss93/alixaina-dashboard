@@ -1,11 +1,11 @@
 const FIREBASE_API = {
-  apiKey: "AIzaSyCoLrM1KAxDNxUr2dpiDF-VMFeebmI0Woo",
-  authDomain: "nasreenxfaridz.firebaseapp.com",
-  databaseURL: "https://nasreenxfaridz.firebaseio.com",
-  projectId: "nasreenxfaridz",
-  storageBucket: "",
-  messagingSenderId: "532419068605",
-  appId: "1:532419068605:web:b9736b606485ed9f"
+  apiKey: "AIzaSyALaKRQZRKxiaVUJ1PcKJKrwR5FUBdzTwM",
+  authDomain: "invites-6e22c.firebaseapp.com",
+  databaseURL: "https://invites-6e22c.firebaseio.com",
+  projectId: "invites-6e22c",
+  storageBucket: "invites-6e22c.appspot.com",
+  messagingSenderId: "773031024720",
+  appId: "1:773031024720:web:716181afd2adddc677d955"
 };
 
 export {FIREBASE_API};

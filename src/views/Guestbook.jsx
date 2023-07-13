@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { EmptyHeader } from 'components';
 import { Container, Card, Row, Col } from 'reactstrap';
 
-import * as firebase from 'firebase';
+import firebase from 'firebase/app';
+import { options } from '../config';
 
 class Guestbook extends Component {
     state = {messages: [], load:'1'}
@@ -11,7 +12,7 @@ class Guestbook extends Component {
     }
     fetch = () => {
         let that = this, MESSAGES = [];
-        firebase.database().ref('RSVP/going/').once('value').then((snapshot) => {
+        firebase.database().ref(`${options.path}/RSVP/going/`).once('value').then((snapshot) => {
             if(snapshot.exists()) {
                 let keys = Object.keys(snapshot.val());
                 keys.forEach((message) => {
@@ -26,7 +27,7 @@ class Guestbook extends Component {
                 console.log('No RSVP')
             }
         }).then(() => {
-            firebase.database().ref('RSVP/not_going/').once('value').then((snapshot) => {
+            firebase.database().ref(`${options.path}/RSVP/not_going/`).once('value').then((snapshot) => {
                 if(snapshot.exists()) {
                     let keys = Object.keys(snapshot.val());
                     keys.forEach((message) => {

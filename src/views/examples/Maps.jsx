@@ -4,7 +4,6 @@ import { Card, CardHeader, CardBody, Container, Row, Col, UncontrolledTooltip
 } from "reactstrap";
 // core components
 import EmptyHeader from "components/Headers/EmptyHeader.jsx";
-// import * as firebase from 'firebase';
 
 const MapWrapper = withScriptjs(
   withGoogleMap(props => (

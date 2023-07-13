@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 // import indexRoutes from "./routes.js";
 import indexRoutes from "routesIndex.js";
 
-// import * as firebase from 'firebase'
+// import firebase from 'firebase/app';
 // import {inject, observer} from 'mobx-react'
 
 class App extends React.Component{

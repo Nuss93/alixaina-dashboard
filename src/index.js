@@ -13,7 +13,7 @@ import RealDashboard from './RealDashboard.js';
 // import AdminLayout from "layouts/Admin.jsx";
 import AuthLayout from "layouts/Auth.jsx";
 
-import * as firebase from 'firebase';
+import firebase from 'firebase/app';
 // import {CONFIG} from './config.js'
 import {FIREBASE_API} from './value.js';
 import { createHashHistory } from 'history';

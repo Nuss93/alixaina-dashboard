@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import * as firebase from 'firebase';
+import firebase from 'firebase/app';
 import { EmptyHeader, ResponseDisplay } from 'components';
 import { Container, Card, Row, Col, InputGroupText, InputGroupAddon, Input, InputGroup
  } from 'reactstrap';
+import { options } from '../config';
 
 class Guestlist extends Component {
     state = {going:[], load:'1', not:[], loadnot:'1', search:''}
@@ -13,15 +14,16 @@ class Guestlist extends Component {
         this.setState({search : event.target.value, currentPage:1})
     }
     componentWillUnmount() {
-        firebase.database().ref('RSVP/going/').off()
-        firebase.database().ref('RSVP/not_going/').off()
+        firebase.database().ref(`${options.path}/RSVP/going/`).off();
+        firebase.database().ref(`${options.path}/RSVP/not_going/`).off();
+
     }
     componentDidMount() {
         this.fetchGuest()
     }
     fetchGuest = () => {
         let that = this;
-        firebase.database().ref('RSVP/going/').on('value', function(snapshot){
+        firebase.database().ref(`${options.path}/RSVP/going`).on('value', function(snapshot){
             let DATA = [];
             if(snapshot.exists()) {
                 let keys = Object.keys(snapshot.val())
@@ -39,7 +41,7 @@ class Guestlist extends Component {
             }
         })
 
-        firebase.database().ref('RSVP/not_going/').on('value', function(snapshot2){
+        firebase.database().ref(`${options.path}/RSVP/not_going`).on('value', function(snapshot2){
             let DATA2 = []
             if(snapshot2.exists()) {
                 let keys2 = Object.keys(snapshot2.val())

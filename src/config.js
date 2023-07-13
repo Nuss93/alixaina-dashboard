@@ -3,5 +3,8 @@
 // 0 = development build
 
 const CONFIG = 0;
+const options = {
+    path : 'ainaxali'
+}
 
-export {CONFIG}
+export {CONFIG, options}
