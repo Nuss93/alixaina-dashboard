@@ -11,6 +11,7 @@ import { Button, Card, CardHeader, CardBody, CardTitle, Collapse,
   NavbarBrand, Navbar, NavItem, NavLink, Nav,
   Progress, Table, Container, Row, Col
 } from "reactstrap";
+import { options } from "../../config";
 
 var ps;
 
@@ -95,7 +96,7 @@ class Sidebar extends React.Component {
                 className="navbar-brand-img"
                 src={logo.imgSrc}
               /> */}
-              <div className="sidebar-header">Nasreen X Faridz</div>
+              <div className="sidebar-header">{options.title}</div>
             </NavbarBrand>
           ) : null}
           {/* User */}
@@ -202,11 +203,8 @@ class Sidebar extends React.Component {
             </Form>
             {/* Navigation */}
             <Nav navbar>{this.createLinks(routes)}</Nav>
-            {/* Divider */}
-            <hr className="my-3" />
-            {/* Heading */}
-            {/* <h6 className="navbar-heading text-muted">Documentation</h6> */}
-            {/* Navigation */}
+
+            {/* <hr className="my-3" />
             <Nav className="mb-md-3" navbar>
               <NavItem>
                 <NavLink href="http://nasreenxfaridz.com">
@@ -214,19 +212,7 @@ class Sidebar extends React.Component {
                   E-invite
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/colors?ref=adr-admin-sidebar">
-                  <i className="ni ni-palette" />
-                  Foundation
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/alerts?ref=adr-admin-sidebar">
-                  <i className="ni ni-ui-04" />
-                  Components
-                </NavLink>
-              </NavItem> */}
-            </Nav>
+            </Nav> */}
           </Collapse>
         </Container>
       </Navbar>

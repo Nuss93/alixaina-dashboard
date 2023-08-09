@@ -4,7 +4,12 @@
 
 const CONFIG = 0;
 const options = {
-    path : 'ainaxali'
+    path : 'ainaxali',
+    title : 'Aina X Ali'
 }
+// const options = {
+//     path : 'alixaina',
+//     title : 'ALI punya side'
+// }
 
 export {CONFIG, options}
