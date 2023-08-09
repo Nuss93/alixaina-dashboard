@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Walimatulurus Nasreen & Faridz",
   "main": "index.js",
-  "homepage": "http://nasreenxfaridz.com/dashboard",
+  "homepage": "http://Nuss93.github.io/alixaina-dashboard",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/creativetimofficial/argon-dashboard-react.git"
@@ -29,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
