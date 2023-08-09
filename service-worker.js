@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/alixaina-dashboard/precache-manifest.fb5d94c511cebbc5cb3c27bca00cf610.js"
+  "/alixaina-dashboard/precache-manifest.f1d61743318e3d97edac52b1b0651284.js"
 );
 
 workbox.clientsClaim();
